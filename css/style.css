@@ -1,0 +1,175 @@
+:root {
+    --primary : #7c59b0;
+    --border-radius : 7px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Domine', serif;
+}
+body {
+    background-color: var(--primary);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%23f2e9ff' fill-opacity='0.4' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
+}
+h1 {
+    color: white;
+    padding: 20px;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    width: 20rem;
+    user-select: none;
+    text-align: center;
+    margin: 5rem auto;
+}
+h1:hover {
+    background-color: rgba(0,0,0, 0.7);
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.item {
+    /* width: 13rem;  */
+    display: flex;
+    flex-wrap: wrap;
+}
+.name {
+    width: 13rem;
+    position: relative;
+    padding: 20px;
+    margin: 1rem 0 0 1rem;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: var(--border-radius);
+}
+.name:hover {
+    background-color: rgba(0,0,0, 0.7);
+}
+
+a {
+    width: 50%;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.name:hover a {
+    text-decoration: underline;
+}
+.name img {
+    width: 1.4rem;
+    height: 1.4rem;
+    vertical-align: sub;
+}
+
+.delete {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+.modal-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal {
+    background-color: #fff;
+    position: relative;
+    width: 30rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 20px 2px;
+}
+.modal i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    color: white;
+}
+.modal h3 {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--primary);
+    border-radius: 6px 6px 0 0;
+    color: white;
+    font-size: 1.3rem;
+}
+.modal label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+.modal input {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid var(--primary);
+    text-transform: none;
+}
+.website-name{
+    padding: 0 15px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.website-url {
+    padding: 0 15px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.modal button {
+    width: 6rem;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    margin: 5px 0 15px 15px;
+}
+
+
+
+
+@media screen and (max-width:540px) {
+    .name {
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .modal {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width:430px) {
+    h1 {
+        font-size: 1.5rem;
+        width: 17rem;
+    }
+    .modal {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    h1 {
+        font-size: 1.5rem;
+        width: 17rem;
+    }
+    .modal {
+        width: 17rem;
+    }
+}

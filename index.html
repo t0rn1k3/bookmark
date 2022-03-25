@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3c78e1610b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Ramaraja&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bookmark</title>
+</head>
+<body>
+    <h1 id="showModal">add Bookmark</h1>
+
+    <div class="container" id="bookmarkCont">
+        <div class="item"></div>
+    </div>
+
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <i id="close" class="fa-solid fa-xmark"></i>
+            <div class="modal-header">
+                <h3>add Bookmark</h3>
+            </div>
+            <div class="modal-content">
+                <form id="bookmarkForm">
+                    <div class="website-name">
+                        <label for="">website name</label>
+                        <input id="websiteName" type="text" placeholder="enter website name">
+                    </div>
+                    <div class="website-url">
+                        <label for="">website URL</label>
+                        <input id="websiteUrl" type="text" placeholder="enter website URL">
+                    </div>
+                    <button id="save">
+                        save
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
